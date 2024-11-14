@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020202"
+    tools:context=".SegundaActivity">
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Registrate"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate2"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:background="#DDFFFFFF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="ESCRIBE UNA CONTRASEÑA"
+        android:textColor="#C7000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="26dp"
+        android:background="#DDFFFFFF"
+        android:ems="10"
+        android:inputType="date"
+        android:text="FECHA NACIMIENTO"
+        android:textColor="#C7000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:background="#DDFFFFFF"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="ESCRIBE TU CORREO ELECTRONICO"
+        android:textColor="#C7000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="377dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:gravity="bottom|left"
+        android:inputType="text"
+        android:text="Crear una cuenta Nueva"
+        android:textColor="#E0FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="413dp"
+        android:layout_height="254dp"
+        android:contentDescription="xxx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gym" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="#DDFFFFFF"
+        android:ems="10"
+        android:hint="Nombre"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

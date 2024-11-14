@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">gymnasio</string>
+    <string name="hola">Hola Mundo</string>
+    <string name="msg_click">Ahora bien</string>
+    <string name="msg_toast">Por favor, introduce un email</string>
+    <string name="msg_welcome">¡Bienvenido </string>
+    <string name="exclamacion">!</string>
+    <string name="msgToast_segunda">Por favor, introduce un nombre</string>
+
+</resources>

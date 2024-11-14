@@ -15,8 +15,8 @@ class TerceraActivity : AppCompatActivity() {
 
         val txtViewWelcome:TextView = findViewById(R.id.textWelcome)
         val extras = intent.extras
-        val stringName = extras!!.getString("name")
-        val stringWelcome = "¡Bienvenido " + stringName+ "!"
+        val stringName = extras!!.getString("userName")
+        val stringWelcome = getString(R.string.msg_welcome) +" " +  stringName + getString(R.string.exclamacion)
         txtViewWelcome.setText(stringWelcome)
     }
 }
