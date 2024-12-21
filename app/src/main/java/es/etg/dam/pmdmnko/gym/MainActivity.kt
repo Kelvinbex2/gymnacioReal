@@ -6,15 +6,24 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import es.etg.dam.pmdmnko.gym.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val boton: Button = findViewById(R.id.btnRegis)
-        val btn2: Button = findViewById(R.id.btnSign)
-        val txtEmail: TextView = findViewById(R.id.txtUser)
+        val boton: Button = binding.btnRegis
+        val btn2: Button = binding.btnSign
+        val txtEmail: TextView = binding.txtUser
+
+        val nombre = leer()
+        if(nombre !=null){
+            val txtNombre = binding.txtUser.setText(nombre);
+        }
 
         boton.setOnClickListener {
             val intent = Intent(this, SegundaActivity::class.java)
@@ -23,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         btn2.setOnClickListener {
             val stringUserName = txtEmail.text.toString()
+            guardar()
             if (stringUserName.isNotEmpty()) {
                 val intent = Intent(this, TerceraActivity::class.java)
                 intent.putExtra("userName", stringUserName)
@@ -32,4 +42,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    fun guardar(){
+        val nombre = binding.txtUser.text
+        val sharedPref = getPreferences(MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putString("nombre", nombre.toString())
+        editor.apply()
+    }
+
+
+    fun leer(): String? {
+        val sharedPref = getPreferences(MODE_PRIVATE)
+        val nombre = sharedPref.getString("nombre", "")
+        return nombre
+    }
+
 }

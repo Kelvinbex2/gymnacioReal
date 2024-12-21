@@ -15,7 +15,7 @@
         android:layout_marginTop="56dp"
         android:text="Registrate"
         app:layout_constraintEnd_toEndOf="@+id/editTextDate2"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="@+id/editTextDate2"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
 
@@ -55,8 +55,8 @@
         android:layout_marginTop="28dp"
         android:background="#DDFFFFFF"
         android:ems="10"
+        android:hint="Email o Telefono"
         android:inputType="textEmailAddress"
-        android:text="ESCRIBE TU CORREO ELECTRONICO"
         android:textColor="#C7000000"
         app:layout_constraintEnd_toEndOf="@+id/editTextText2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -98,8 +98,8 @@
         android:background="#DDFFFFFF"
         android:ems="10"
         android:hint="Nombre"
-        android:textColorHint="@color/black"
         android:inputType="text"
+        android:textColorHint="@color/black"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 

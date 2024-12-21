@@ -6,5 +6,7 @@
     <string name="msg_welcome">¡Bienvenido </string>
     <string name="exclamacion">!</string>
     <string name="msgToast_segunda">Por favor, introduce un nombre</string>
+    <string name="claveSegunIntent">userName</string>
+    <string name="msgInsert">Datos guardados correctamente</string>
 
 </resources>
