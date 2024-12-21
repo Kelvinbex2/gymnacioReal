@@ -1,12 +1,16 @@
+package es.etg.dam.pmdmnko.gym.data
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "usuario")
-data class UsuarioEntity(
+@Entity(tableName = "cliente")
+data class ClienteEntity(
 
     @PrimaryKey(autoGenerate = true)
     val id:Long = 0,
     val nombre:String = "",
     val email:String = "",
-    val fecha:String = ""
+    val password:String = "",
+    val date:String = ""
+
 )
