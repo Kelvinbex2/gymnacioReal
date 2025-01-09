@@ -26,8 +26,8 @@
         android:layout_marginTop="28dp"
         android:background="#DDFFFFFF"
         android:ems="10"
+        android:hint="Escribe una contraseña"
         android:inputType="textPassword"
-        android:text="ESCRIBE UNA CONTRASEÑA"
         android:textColor="#C7000000"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,8 +41,8 @@
         android:layout_marginTop="26dp"
         android:background="#DDFFFFFF"
         android:ems="10"
+        android:hint="FECHA NACIMIENTO"
         android:inputType="date"
-        android:text="FECHA NACIMIENTO"
         android:textColor="#C7000000"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
@@ -99,7 +99,7 @@
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColor="#C7000000"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
