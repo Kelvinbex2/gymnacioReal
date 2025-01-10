@@ -56,4 +56,8 @@ dependencies {
     ksp("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    val fragment_version = "1.8.3"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    implementation ("androidx.fragment:fragment-ktx:1.3.6")
+
 }

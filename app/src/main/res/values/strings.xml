@@ -8,5 +8,7 @@
     <string name="msgToast_segunda">Por favor, introduce un nombre</string>
     <string name="claveSegunIntent">userName</string>
     <string name="msgInsert">Datos guardados correctamente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
