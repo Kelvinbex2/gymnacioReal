@@ -26,19 +26,22 @@
             android:id="@+id/frgIzq"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:name="es.etg.dam.pmdmnko.gym.BlueFragment" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/frgCentre"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:name="es.etg.dam.pmdmnko.gym.WhiteFragment" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragDerec"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:name="es.etg.dam.pmdmnko.gym.WhiteFragment" />
 
     </LinearLayout>
 

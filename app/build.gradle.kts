@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "es.etg.dam.pmdmnko.gym"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "es.etg.dam.pmdmnko.gym"
@@ -55,9 +55,9 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     ksp("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
-    val fragment_version = "1.8.3"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
+    val fragment_version = "1.8.5"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
-    implementation ("androidx.fragment:fragment-ktx:1.3.6")
+
 
 }
