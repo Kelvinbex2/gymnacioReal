@@ -10,5 +10,8 @@
     <string name="msgInsert">Datos guardados correctamente</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MSG_CONCEDA">Conceda permisos en ajustes</string>
+    <string name="MSG_ESO">Acceso a la funcionalidad una vez aceptado el permiso</string>
+    <string name="funcionalidad">Acceso a la funcionalidad</string>
 
 </resources>

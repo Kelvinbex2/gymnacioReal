@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "es.etg.dam.pmdmnko.gym"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "es.etg.dam.pmdmnko.gym"
