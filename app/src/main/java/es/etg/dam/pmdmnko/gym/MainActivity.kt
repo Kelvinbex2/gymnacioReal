@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import es.etg.dam.pmdmnko.gym.databinding.ActivityMainBinding
+import android.Manifest
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn2.setOnClickListener {
-            checkReadContactsPermission()
+            checkReadAudioPermission()
             val stringUserName = txtEmail.text.toString()
             guardar()
             if (stringUserName.isNotEmpty()) {
@@ -66,11 +67,12 @@ class MainActivity : AppCompatActivity() {
         return nombre
     }
 
-    private fun checkReadContactsPermission() {
+    private fun checkReadAudioPermission() {
         if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.READ_CALENDAR)
+                Manifest.permission.READ_MEDIA_AUDIO)
             != PackageManager.PERMISSION_GRANTED) {
             requestReadConctactsPermission()
+            requestReadAudiosPermission()
         } else {
             Toast.makeText(this, getString(R.string.funcionalidad), Toast.LENGTH_SHORT).show()
         }
@@ -80,14 +82,28 @@ class MainActivity : AppCompatActivity() {
 
     private fun requestReadConctactsPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.READ_CONTACTS)) {
+                Manifest.permission.READ_CALENDAR)) {
 
             Toast.makeText(this,getString(R.string.MSG_CONCEDA), Toast.LENGTH_SHORT).show()
         } else {
             //
             ActivityCompat.requestPermissions(this,
-                arrayOf(Manifest.permission.READ_CONTACTS),
-                Companion.READ_CONTACTS_REQUEST_CODE
+                arrayOf(Manifest.permission.READ_CALENDAR),
+                READ_CONTACTS_REQUEST_CODE
+            )
+        }
+    }
+
+    private fun requestReadAudiosPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                Manifest.permission.READ_MEDIA_AUDIO)) {
+
+            Toast.makeText(this,getString(R.string.MSG_CONCEDA), Toast.LENGTH_SHORT).show()
+        } else {
+            //
+            ActivityCompat.requestPermissions(this,
+                arrayOf(Manifest.permission.READ_CALENDAR),
+                READ_CONTACTS_REQUEST_CODE
             )
         }
     }
